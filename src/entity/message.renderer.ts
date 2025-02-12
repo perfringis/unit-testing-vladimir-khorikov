@@ -5,7 +5,7 @@ import { Message } from './message';
 import { Renderer } from './renderer.interface';
 
 export class MessageRenderer implements Renderer {
-  subRenderers: Renderer[] = [];
+  readonly subRenderers: Renderer[] = [];
 
   constructor() {
     this.subRenderers = [
